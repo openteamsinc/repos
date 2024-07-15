@@ -6,7 +6,14 @@ import matter from "gray-matter";
 
 const proposalDirectory = "proposals";
 
-export default async function getPoposalData(id: string) {
+export async function getPoposalIds(): Promise<string[]> {
+  const fileNames = await fs.readdir(proposalDirectory);
+  return fileNames.map((fileName) => {
+    return fileName.replace(/\.md$/, "");
+  });
+}
+
+export async function getPoposalData(id: string) {
   const fullPath = path.join(proposalDirectory, `${id}.md`);
   const fileContents = await fs.readFile(fullPath, "utf8");
 
