@@ -1,13 +1,22 @@
 type Props = {
-  title?: string;
+  id: string;
   contentHtml: string;
+  // --- optional
+  title?: string;
+  image?: string;
+  funding?: {
+    committed: number;
+    total: number;
+  };
+  sponsors?: string[];
+  authors?: string[];
 };
 
 export default function Proposal({ title, contentHtml }: Props) {
   return (
-    <main>
-      <div>{title}</div>
+    <article className="prose">
+      <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-    </main>
+    </article>
   );
 }
