@@ -37,8 +37,8 @@ export default function ProposalDiv({ data }: { data: ProposalData }) {
                     <p className="text-[0.9rem] text-black font-semibold">Proposal Author</p>
                     <div className="flex flex-wrap gap-2">
                         {
-                            data.authors.map((name) => {
-                                return <span>{name}</span>
+                            data.authors.map((name, i) => {
+                                return <span key={i}>{name}</span>
                             })
                         }
                     </div>

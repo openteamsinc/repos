@@ -44,7 +44,7 @@ export default async function Homepage() {
         <div className={`w-full min-h-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 4xl:grid-cols-4 px-10 xl:px-0 gap-10`}>
           {
             allProposalsData.map((proposal) => {
-              return <ProposalDiv data={proposal} />
+              return <ProposalDiv key={proposal.id} data={proposal} />
 
             })
           }
