@@ -13,7 +13,7 @@ export interface ProposalData {
     committed: number;
     total: number;
   };
-  sponsors: string | null;
+  sponsors: string[] | null;
   authors: string[];
   content: string;
   id: string;
@@ -26,15 +26,21 @@ export async function getPoposalIds(): Promise<string[]> {
   });
 }
 
-export function getPoposalData(id: string): ProposalData {
+export async function getPoposalData(id: string): Promise<ProposalData> {
   const fullPath = path.join(proposalDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
   const { data, content } = matter(fileContents);
 
+  // Use remark to convert markdown into HTML string
+  const processedContent = await remark()
+    .use(html)
+    .process(content);
+  const contentHtml = processedContent.toString();
+
   return {
     ...data,
-    content,
+    content: contentHtml,
     id
   } as ProposalData;
 }
