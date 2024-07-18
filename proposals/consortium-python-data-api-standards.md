@@ -6,17 +6,17 @@ funding:
     committed: 400000
     total: 400000
 sponsors: 
- - [@Quansight](https://github.com/Quansight)
- - [@Bodo-inc](https://github.com/Bodo-inc)
- - [@lge-oss](https://github.com/lge-oss)
- - [@deshaw](https://github.com/deshaw)
- - [@google-research](https://github.com/google-research)
- - [@microsoft](https://github.com/microsoft)
+ - '@Quansight'
+ - '@Bodo-inc'
+ - '@lge-oss'
+ - '@deshaw'
+ - '@google-research'
+ - '@microsoft'
 author: 
- - [@srossross](https://github.com/srossross)
+ - '@srossross'
 co-authors: null
 team:
- - [@Quansight](https://github.com/Quansight)
+ - '@Quansight'
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/17
 ---
 
