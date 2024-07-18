@@ -1,8 +1,8 @@
 import fs from 'fs';
-import path from 'path';
-import { remark } from 'remark';
-import html from 'remark-html';
-import matter from 'gray-matter';
+import path from "path";
+import { remark } from "remark";
+import html from "remark-html";
+import matter from "gray-matter";
 
 const proposalDirectory = path.join(process.cwd(), 'proposals');
 
@@ -13,28 +13,28 @@ export interface ProposalData {
     committed: number;
     total: number;
   };
-  github_discussion: string | null;
-  sponsors: string[] | null;
+  sponsors: string | null;
   authors: string[];
   content: string;
   id: string;
 }
 
-export async function getProposalData(id: string): Promise<ProposalData> {
+export async function getPoposalIds(): Promise<string[]> {
+  const fileNames = await fs.promises.readdir(proposalDirectory);
+  return fileNames.map((fileName) => {
+    return fileName.replace(/\.md$/, "");
+  });
+}
+
+export function getPoposalData(id: string): ProposalData {
   const fullPath = path.join(proposalDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
   const { data, content } = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html)
-    .process(content);
-  const contentHtml = processedContent.toString();
-
   return {
     ...data,
-    content: contentHtml,
+    content,
     id
   } as ProposalData;
 }

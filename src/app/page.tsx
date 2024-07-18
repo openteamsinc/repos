@@ -6,7 +6,7 @@ import { getAllProposalsList, ProposalData } from "./getProposalData";
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
-export default function Homepage() {
+export default async function Homepage() {
 
   const allProposalsData: ProposalData[] = getAllProposalsList();
 
@@ -43,8 +43,8 @@ export default function Homepage() {
       <section className="flex flex-col items-center justify-center w-full py-10 xl:px-20 3xl:px-60">
         <div className={`w-full min-h-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 4xl:grid-cols-4 px-10 xl:px-0 gap-10`}>
           {
-            allProposalsData.map((proposal, i) => {
-              return <ProposalDiv key={i} data={proposal} />
+            allProposalsData.map((proposal) => {
+              return <ProposalDiv key={proposal.id} data={proposal} />
 
             })
           }

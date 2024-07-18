@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Progress } from "./shadCDN/progress";
 import { FaImage } from "react-icons/fa6";
-import Image from "next/image";
+import { HomePageAvatar } from "./HomePageAvater";
 import { ProposalData } from "@/app/getProposalData";
 
 
@@ -14,10 +14,7 @@ export default function ProposalDiv({ data }: { data: ProposalData }) {
             <div className="w-full flex items-center justify-between">
                 <div className="w-[30%] h-full flex items-center justify-center">
                     <div className="w-full aspect-square border rounded-md border-gray-500 flex items-center justify-center relative overflow-hidden">
-                        {
-                            data.image ? <Image fill={true} src={data.image} alt="Proposal Image" className="w-full h-full object-contain" /> : <FaImage className="text-[5vmax] text-gray-300" />
-                        }
-
+                        <FaImage className="text-[5vmax] text-gray-300" />
                     </div>
                 </div>
                 <div className="w-[67%]">
