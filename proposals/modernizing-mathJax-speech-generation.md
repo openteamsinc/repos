@@ -3,11 +3,12 @@ title: Modernizing MathJax Speech Generation
 tagline: Converting MathJax's Speech Solution to Typescript
 image: https://storage.googleapis.com/repos-backend/proposal_c8bb132f-9f79-4013-a2b8-5e09f6d9a3d3.png
 funding:
-    committed: 0
-    total: 0
+    committed: 4400
+    total: 4400
 sponsors: null
 authors: 
  - '@bskinn'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/62
 ---
 

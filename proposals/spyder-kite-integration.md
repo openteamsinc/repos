@@ -3,11 +3,12 @@ title: Spyder-Kite Integration - Streamlined Developer Experience
 tagline: Integrate Kite Support, Enhance Editor API, Code Completion, Documentation Rendering, Installation
 image: https://storage.googleapis.com/repos-backend/proposal_777e4b57-73fe-41c4-b5ca-10fc86eca4a2.png
 funding:
-    committed: 0
-    total: 0
+    committed: 32000
+    total: 32000
 sponsors: null
 authors: 
  - '@bskinn'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/63
 ---
 

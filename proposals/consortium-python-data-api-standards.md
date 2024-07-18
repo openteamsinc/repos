@@ -12,9 +12,8 @@ sponsors:
  - '@deshaw'
  - '@google-research'
  - '@microsoft'
-author: 
+authors: 
  - '@srossross'
-co-authors: null
 team:
  - '@Quansight'
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/17

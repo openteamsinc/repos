@@ -6,9 +6,8 @@ funding:
     committed: 5000
     total: 5000
 sponsors: null
-author: 
+authors: 
  - '@bskinn'
-co-authors: null
 team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/67
 ---

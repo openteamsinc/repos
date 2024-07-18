@@ -6,9 +6,8 @@ funding:
     committed: 100000
     total: 0
 sponsors: null
-author: 
+authors: 
  - '@jravenel'
-co-authors: null
 team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/402
 ---
