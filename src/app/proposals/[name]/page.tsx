@@ -85,10 +85,17 @@ export default async function Proposal({ params }: { params: PageName }) {
                 }
               </div>
             </div>
-            <div className="h-full flex flex-col items-center justify-start">
-              <Link href={"https://forms.gle/Uj1SY1w5hxq2Sn938"} rel="noopener noreferrer" target="_blank" className="px-4 py-2 bgcolor-primary text-white rounded">
+            <div className="w-[20%] 2xl:w-[10rem] h-full flex flex-col items-center justify-start gap-2">
+              <Link href={"https://forms.gle/Uj1SY1w5hxq2Sn938"} rel="noopener noreferrer" target="_blank" className="w-full px-4 py-2 bgcolor-primary text-white rounded text-center">
                 Contact Us
               </Link>
+              {
+                proposalData.github_discussion && <Link href={proposalData.github_discussion} rel="noopener noreferrer" target="_blank" className="w-full px-4 py-2 bgcolor-primary text-white rounded text-center">
+                  <span>
+                    JOIN THE DISCUSSION ON GITHUB
+                  </span>
+                </Link>
+              }
             </div>
           </div>
         </div>

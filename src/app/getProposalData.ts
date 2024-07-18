@@ -13,6 +13,7 @@ export interface ProposalData {
     committed: number;
     total: number;
   };
+  github_discussion: string | null;
   sponsors: string[] | null;
   authors: string[];
   content: string;

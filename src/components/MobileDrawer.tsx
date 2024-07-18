@@ -19,7 +19,7 @@ const MobileDrawer = () => {
         <div className="xl:hidden h-full">
             <div onClick={() => {
                 onOpen();
-            }} className='w-8 h-full flex-col-start-center relative'>
+            }} className='w-8 h-full flex flex-col items-start justify-center relative'>
                 <Image src={drawerImg} alt="Drawer Icon" fill={true} className="w-full h-full object-contain" />
             </div>
             <Drawer
@@ -29,10 +29,10 @@ const MobileDrawer = () => {
                 onEsc={onClose}
             >
                 <DrawerOverlay className="bg-black bg-opacity-50" />
-                <DrawerContent className="!w-[70%] h-full flex-col-center-between bg-nav-color text-black-color ">
+                <DrawerContent className="!w-[70%] h-full flex flex-col items-center justify-between bg-nav-color text-black-color ">
                     <div className="w-full h-full">
                         <section className="w-full h-full flex flex-col gap-10">
-                            <div className="flex-row-center-between w-full">
+                            <div className="flex items-center justify-between w-full">
                                 <Link href={`/how-it-works`} onClick={onClose} className="w-full">
                                     How It works
                                 </Link>
