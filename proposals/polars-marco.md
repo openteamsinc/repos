@@ -7,6 +7,7 @@ funding:
 sponsors: null
 authors: 
  - '@MarcoGorelli'
+github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/196
 ---
 
 # Project Overview
