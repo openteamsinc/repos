@@ -40,6 +40,7 @@ export default async function Homepage() {
             Discover open source projects to contribute to or sponsor.
           </p>
         </div>
+      </div>
       <section className="flex flex-col items-center justify-center w-full py-10 xl:px-20 3xl:px-60">
         <div className={`w-full min-h-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 4xl:grid-cols-4 px-10 xl:px-0 gap-10`}>
           {
