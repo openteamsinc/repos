@@ -5,7 +5,13 @@ image: https://storage.googleapis.com/repos-backend/proposal_d055e921-3179-4159-
 funding:
     committed: 400000
     total: 400000
-sponsors: null
+sponsors: 
+ - '@Quansight'
+ - '@Bodo-inc'
+ - '@lge-oss'
+ - '@deshaw'
+ - '@google-research'
+ - '@microsoft'
 authors: 
  - '@srossross'
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/17
