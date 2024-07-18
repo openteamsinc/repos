@@ -1,5 +1,6 @@
 ---
 title: Consortium for Python Data API Standards
+tagline: Driving innovation in Python’s data ecosystem by standardizing array and dataframe APIs
 image: https://storage.googleapis.com/repos-backend/proposal_d055e921-3179-4159-8352-fe8117673ada.png
 funding:
     committed: 400000
