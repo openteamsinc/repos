@@ -1,5 +1,6 @@
 ---
 title: Let's make Polars time series operations ergonomic
+tagline: Polars' rolling functions aren't easy to use, and expanding ones aren't implemented - let's change that!
 image: https://storage.googleapis.com/repos-backend/proposal_37db62a8-2a74-43c2-b0ab-f61ca762a5f3.png
 funding:
     committed: 50000
@@ -7,6 +8,7 @@ funding:
 sponsors: null
 authors: 
  - '@MarcoGorelli'
+github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/196
 ---
 
 # Project Overview
