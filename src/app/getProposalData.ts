@@ -1,10 +1,10 @@
 import fs from 'fs';
-import path from "path";
-import { remark } from "remark";
-import html from "remark-html";
-import matter from "gray-matter";
+import path from 'path';
+import { remark } from 'remark';
+import html from 'remark-html';
+import matter from 'gray-matter';
 
-const proposalDirectory = "proposals";
+const proposalDirectory = path.join(process.cwd(), 'proposals');
 
 export interface ProposalData {
   title: string;
@@ -19,14 +19,7 @@ export interface ProposalData {
   id: string;
 }
 
-export async function getPoposalIds(): Promise<string[]> {
-  const fileNames = await fs.promises.readdir(proposalDirectory);
-  return fileNames.map((fileName) => {
-    return fileName.replace(/\.md$/, "");
-  });
-}
-
-export async function getPoposalData(id: string): Promise<ProposalData> {
+export async function getProposalData(id: string): Promise<ProposalData> {
   const fullPath = path.join(proposalDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 

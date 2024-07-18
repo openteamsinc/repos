@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Progress } from "./shadCDN/progress";
 import { FaImage } from "react-icons/fa6";
-import { ProposalData } from "@/app/getProposalData";
 import Image from "next/image";
+import { ProposalData } from "@/app/getProposalData";
 
 
 

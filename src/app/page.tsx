@@ -1,4 +1,3 @@
-"use client"
 import React from "react";
 import Image from "next/image";
 import bannerImg from "../../public/bannerImage.png";
@@ -7,7 +6,7 @@ import { getAllProposalsList, ProposalData } from "./getProposalData";
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
-export default async function Homepage() {
+export default function Homepage() {
 
   const allProposalsData: ProposalData[] = getAllProposalsList();
 

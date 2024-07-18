@@ -1,8 +1,8 @@
-import { getPoposalData, ProposalData } from "@/app/getProposalData";
 import { Progress } from '../../../components/shadCDN/progress';
 import Image from "next/image";
 import { FaImage } from "react-icons/fa6";
 import Link from "next/link";
+import { getProposalData, ProposalData } from '@/app/getProposalData';
 
 interface PageName {
   name: string
@@ -10,8 +10,7 @@ interface PageName {
 
 export default async function Proposal({ params }: { params: PageName }) {
 
-  const proposalData: ProposalData = await getPoposalData(params.name);
-  console.log(proposalData.content);
+  const proposalData: ProposalData = await getProposalData(params.name);
 
   return (
     <article className="w-full">
