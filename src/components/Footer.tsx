@@ -24,7 +24,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full flex-row-center-between">
+      <div className="w-full flex items-center justify-between">
         <span className="hidden lg:inline-block lg:text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2024{" "}
           <a href="https://repos.openteams.com/" className="hover:underline">
