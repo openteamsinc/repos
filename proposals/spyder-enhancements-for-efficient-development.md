@@ -3,11 +3,12 @@ title: Spyder - Enhancements for Efficient Development
 tagline: Extended Plugins, Improved Git Support, Managed Projects, HTML Viewer, and Remote Development
 image: https://storage.googleapis.com/repos-backend/proposal_09e1866c-d136-4f99-a0d5-d51b4ab2b7a4.png
 funding:
-    committed: 0
-    total: 0
+    committed: 60000
+    total: 60000
 sponsors: null
 authors: 
  - '@bskinn'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/65
 ---
 

@@ -5,9 +5,12 @@ image: https://storage.googleapis.com/repos-backend/proposal_728f7072-826e-4bb0-
 funding:
     committed: 10000
     total: 10000
-sponsors: null
+sponsors:
+ - '@Quansight'
+ - '@numfocus'
 authors: 
  - '@srossross'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/151
 ---
 

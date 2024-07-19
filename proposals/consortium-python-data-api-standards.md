@@ -14,6 +14,8 @@ sponsors:
  - '@microsoft'
 authors: 
  - '@srossross'
+team:
+ - '@Quansight'
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/17
 ---
 
