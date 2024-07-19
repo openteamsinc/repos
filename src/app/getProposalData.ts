@@ -13,10 +13,11 @@ export interface ProposalData {
     committed: number;
     total: number;
   };
-  sponsors: string | null;
+  sponsors: string[] | null;
   authors: string[];
   content: string;
   id: string;
+  github_discussion: string | null;
 }
 
 export async function getPoposalIds(): Promise<string[]> {
@@ -26,7 +27,7 @@ export async function getPoposalIds(): Promise<string[]> {
   });
 }
 
-export function getPoposalData(id: string): ProposalData {
+export function getProposalData(id: string): ProposalData {
   const fullPath = path.join(proposalDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -34,6 +35,7 @@ export function getPoposalData(id: string): ProposalData {
 
   return {
     ...data,
+    github_discussion: data['github-discussion'],
     content,
     id
   } as ProposalData;
@@ -49,6 +51,7 @@ export function getAllProposalsList(): ProposalData[] {
 
     return {
       ...data,
+      github_discussion: data['github-discussion'],
       content,
       id: fileName.replace(/\.md$/, '') // Remove the .md extension
     } as ProposalData;
