@@ -8,6 +8,7 @@ funding:
 sponsors: null
 authors: 
  - '@MarcoGorelli'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/196
 ---
 
@@ -43,8 +44,6 @@ Specifically, the idea is to address all of the following:
 The first stage deals with the "sorted data" assumption.
 
 First, the following temporal methods should not require sorted data in order to work (estimate: 80 hours):
-
-
  - DataFrame.upsample
  - DataFrame.rolling
  - DataFrame.group_by_dynamic

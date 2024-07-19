@@ -8,6 +8,7 @@ funding:
 sponsors: null
 authors: 
  - '@jravenel'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/402
 ---
 

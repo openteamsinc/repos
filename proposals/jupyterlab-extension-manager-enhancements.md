@@ -3,11 +3,12 @@ title: JupyterLab Extension Manager Enhancements
 tagline: Allow/Deny Lists, Splash Screens, and Improved Extension Discoverability
 image: https://storage.googleapis.com/repos-backend/proposal_b5c3e35e-552b-4d4b-8aac-e0dc1d8ad190.png
 funding:
-    committed: 0
-    total: 0
+    committed: 75000
+    total: 75000
 sponsors: null
 authors: 
  - '@bskinn'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/61
 ---
 

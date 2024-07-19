@@ -8,6 +8,7 @@ funding:
 sponsors: null
 authors: 
  - '@hgrecco'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/150
 ---
 

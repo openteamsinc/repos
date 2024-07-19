@@ -3,11 +3,12 @@ title: Unified Recipe Regenerator
 tagline: Unify Upstream Metadata Parsing/Change Detection Across Languages & Improve Recipe Regeneration
 image: https://storage.googleapis.com/repos-backend/proposal_b7031401-c426-47c7-be53-1cda5c0bf91d.png
 funding:
-    committed: 0
-    total: 0
+    committed: 3750
+    total: 3750
 sponsors: null
 authors: 
  - '@bskinn'
+team: null
 github-discussion: https://github.com/openteamsinc/proposal_discussions/discussions/66
 ---
 
