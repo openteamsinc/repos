@@ -3,8 +3,8 @@ title: Textual TUI for sphobjinv
 tagline: Interactive Console-Based Browser for Sphinx objects.inv Inventories
 image: https://storage.googleapis.com/repos-backend/proposal_aab5e859-2ca1-4158-9651-02e69d9f0a6e.png
 funding:
-    committed: 10000
-    total: 0
+    committed:0
+    total:  10000
 sponsors: null
 authors: 
  - '@bskinn'
