@@ -8,6 +8,7 @@ const proposalDirectory = path.join(process.cwd(), 'proposals');
 
 export interface ProposalData {
   title: string;
+  tagline: string | null;
   image: string;
   funding: {
     committed: number;
