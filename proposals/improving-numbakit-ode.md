@@ -3,8 +3,8 @@ title: Improving numbakit-ode - an intuitive package that leverages numba to spe
 tagline: Build a better API, implement a variety of integrators, provide documentation and examples.
 image: https://storage.googleapis.com/repos-backend/proposal_33723e33-3d1e-4f2f-b71e-841a7c52c7f6.jpg
 funding:
-    committed: 12000
-    total: 0
+    committed: 0
+    total: 12000
 sponsors: null
 authors: 
  - '@hgrecco'
