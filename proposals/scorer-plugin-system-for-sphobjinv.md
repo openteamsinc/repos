@@ -3,8 +3,8 @@ title: Scorer Plugin System for sphobjinv 'suggest'
 tagline: Enable Users to Write & Use Custom Scorers for Inventory Searches
 image: https://storage.googleapis.com/repos-backend/proposal_777e4b57-73fe-41c4-b5ca-10fc86eca4a2.png
 funding:
-    committed: 7500
-    total: 0
+    committed: 0
+    total: 7500
 sponsors: null
 authors: 
  - '@bskinn'

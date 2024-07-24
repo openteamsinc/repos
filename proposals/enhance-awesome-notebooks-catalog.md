@@ -3,8 +3,8 @@ title: Enhancement of the Awesome-notebooks Catalog
 tagline: The biggest catalog of operational Jupyter notebook templates
 image: https://storage.googleapis.com/repos-backend/proposal_c5b31fd4-d773-4396-9d41-0150b1fb00bd.jpg
 funding:
-    committed: 100000
-    total: 0
+    committed: 0
+    total: 100000
 sponsors: null
 authors: 
  - '@jravenel'
