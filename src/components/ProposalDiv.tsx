@@ -38,7 +38,7 @@ export default function ProposalDiv({ data }: { data: ProposalData }) {
                     <div className="flex flex-wrap gap-2">
                         {
                             data.authors.map((name, i) => {
-                                return <span key={i}>{name}</span>
+                                return <HomePageAvatar key={i} profileImage={`https://avatars.githubusercontent.com/${name.slice(1)}`} name={name.slice(1)} />
                             })
                         }
                     </div>
