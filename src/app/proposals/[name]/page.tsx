@@ -26,6 +26,11 @@ export default async function Proposal({ params }: { params: PageName }) {
             <p className="max-h-[80%] overflow-hidden text-xl 3xl:text-2xl font-semibold">
               {proposalData?.title}
             </p>
+            {
+              proposalData.tagline && <p className="max-h-[15%] overflow-hidden text-black-main text-xs 3xl:text-sm 4xl:text-base mt-2 font-medium">
+                {proposalData.tagline}
+              </p>
+            }
           </div>
         </div>
         <div className={`w-full h-[40vmax] relative ${!proposalData?.image && 'border-2 border-gray-300'} flex items-center justify-center xl:hidden overflow-hidden mb-5`}>
