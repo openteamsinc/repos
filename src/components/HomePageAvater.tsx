@@ -25,7 +25,7 @@ export const HomePageAvatar = ({ name, profileImage }: { name: string, profileIm
 
     return <div>
         <HoverCard openDelay={0} closeDelay={0}>
-            <HoverCardTrigger onClick={(e) => openNewWindow(e, `https://github.com/${name}`)}>
+            <HoverCardTrigger className="cursor-pointer" onClick={(e) => openNewWindow(e, `https://github.com/${name}`)}>
                 <Avatar className="w-10 h-10">
                     <AvatarImage src={profileImage} />
                     <AvatarFallback>CN</AvatarFallback>

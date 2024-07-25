@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaImage } from "react-icons/fa6";
 import Link from "next/link";
 import { getProposalData, ProposalData } from '@/app/getProposalData';
+import { HomePageAvatar } from '@/components/HomePageAvater';
 
 interface PageName {
   name: string
@@ -45,13 +46,12 @@ export default async function Proposal({ params }: { params: PageName }) {
             <div className="flex flex-wrap gap-2">
               {
                 proposalData?.authors.map((author, i) => {
-                  return <span key={i}>{author}</span>
+                  return <HomePageAvatar key={i} profileImage={`https://avatars.githubusercontent.com/${author.slice(1)}`} name={author.slice(1)} />
                 })
               }
             </div>
           </div>
         </div>
-
         <div className="w-full xl:h-[13vmax] 2xl:h-[15vh] hidden xl:flex xl:items-center xl:justify-between my-10">
           <div className="w-[35%] 2xl:w-[45%] h-full internal-project-item-border shadow p-5">
             <Progress value={(proposalData.funding.total / proposalData.funding.committed) * 100} />
@@ -70,7 +70,7 @@ export default async function Proposal({ params }: { params: PageName }) {
               <div className="flex flex-wrap gap-2">
                 {
                   proposalData?.authors.map((author, i) => {
-                    return <span key={i}>{author}</span>
+                    return <HomePageAvatar key={i} profileImage={`https://avatars.githubusercontent.com/${author.slice(1)}`} name={author.slice(1)} />
                   })
                 }
               </div>
@@ -80,7 +80,7 @@ export default async function Proposal({ params }: { params: PageName }) {
               <div className="flex flex-wrap gap-2">
                 {
                   proposalData.sponsors?.map((sponsor, i) => {
-                    return <span key={i}>{sponsor}</span>
+                    return <HomePageAvatar key={i} profileImage={`https://avatars.githubusercontent.com/${sponsor.slice(1)}`} name={sponsor.slice(1)} />
                   })
                 }
               </div>
