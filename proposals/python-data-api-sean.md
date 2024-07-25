@@ -3,8 +3,8 @@ title: Improve Python Data API Standards
 tagline: Driving innovation in Python’s data ecosystem by standardizing array and dataframe APIs
 image: https://storage.googleapis.com/repos-backend/proposal_aa22c6c3-eb02-4764-8832-718e2523a464.png
 funding:
-    committed: 300000
-    total: 100000
+    committed: 100000
+    total: 300000
 sponsors: null
 authors: 
  - '@srossross'
